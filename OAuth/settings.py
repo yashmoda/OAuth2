@@ -25,7 +25,7 @@ SECRET_KEY = 'i6$b$r9zu_o8qyfs*uq+r)g*k-a-ulfx3l@-qew*17@t96nm-q'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['0.0.0.0', '127.0.0.1', '192.168.0.101']
+ALLOWED_HOSTS = ['0.0.0.0', '127.0.0.1', 'yashmoda.pythonanywhere.com']
 
 
 # Application definition

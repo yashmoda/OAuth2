@@ -28,7 +28,7 @@ def register(request):
         'cache-control': "no-cache",
     }
 
-    url = 'http://192.168.0.101:8000/o/token/'
+    url = 'https://yashmoda.pythonanywhere.com/o/token/'
 
     response = requests.request("POST", url, data=payload, headers=headers)
 
@@ -48,7 +48,7 @@ def get_tokens(request):
         'cache-control': "no-cache",
     }
 
-    url = 'http://192.168.0.101:8000/o/token/'
+    url = 'https://yashmoda.pythonanywhere.com/o/token/'
 
     response = requests.request("POST", url, data=payload, headers=headers)
 
@@ -66,7 +66,7 @@ def refresh_token(request):
         'content-type': "application/x-www-form-urlencoded",
         'cache-control': "no-cache",
     }
-    url = 'http://192.168.0.101:8000/o/token/'
+    url = 'https://yashmoda.pythonanywhere.com/o/token/'
     response = requests.request("POST", url, data=payload, headers=headers)
     print(response)
 
@@ -81,7 +81,7 @@ def revoke_token(request):
         'content-type': "application/x-www-form-urlencoded",
         'cache-control': "no-cache",
     }
-    url = 'http://192.168.0.101:8000/o/revoke_token/'
+    url = 'https://yashmoda.pythonanywhere.com/o/token/'
     response = requests.request("POST", url, data=payload, headers=headers)
     print(response)
     return JsonResponse(json.loads(response.content), safe=False)
